@@ -1,0 +1,67 @@
+header{
+    background: pink;
+    padding: 50px 0 50px 0;
+    border: 1px black solid;
+}
+
+.limite_header{
+    width: 940px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+#logo{
+    border-radius: 100px 100px 100px 100px;
+}
+
+nav ul{
+    position: absolute;
+    top: 150px;
+    right: 75px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.lista_main{
+    width: 1900px;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 50px 0;
+}
+
+.lista_main li{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 0 2%;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    border: 3px black solid;
+    border-radius: 30px;
+}
+
+.lista_main img{
+    border-radius: 30px;
+}
+
+.titulo_main{
+    padding: 15px 0 15px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text_main{
+    font-size: 22px;
+    margin: 15px 0;
+}
