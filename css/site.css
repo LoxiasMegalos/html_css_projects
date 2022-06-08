@@ -1,0 +1,324 @@
+body{
+    font-family: 'Radio Canada', sans-serif;
+}
+
+
+/****************************************************************************************************************************************************
+
+                                                                HEADER
+
+*****************************************************************************************************************************************************/
+
+header{
+    background: rgb(255, 255, 255);
+}
+
+.limitado{
+    width: 1500px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20px magenta;
+    border-radius: 30px;
+}
+
+.limite_header{
+    width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50px;
+}
+
+header h1{
+    margin-left: 25px;
+    padding: 25px 0;
+    
+}
+
+header h1 img{
+    border-radius: 50px;
+}
+
+header h2{
+    color: magenta;
+    font-size: 2.7em;
+    font-weight: bold;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+}
+
+header nav{
+    position: absolute;
+    top: 165px;
+    right: 90px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a{
+    color: rgb(14, 14, 14);
+    font-size: 2.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 1.2s;
+}
+
+nav a:hover{
+    color: magenta;
+    text-decoration: underline;
+}
+
+/****************************************************************************************************************************************************
+
+                                                                MAIN
+
+*****************************************************************************************************************************************************/
+.artes{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 30px 0;
+    position: relative;
+}
+
+.titulo{
+    font-size: 3em;
+    color: magenta;
+    padding: 0 0 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.artes li{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 10px 10px 5px 10px;
+    box-sizing: border-box;
+    border: 2px solid magenta;
+    border-radius: 50px;
+}
+
+.artes ul p{
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    color: magenta;
+    font-weight: bold;
+}
+
+.artes li img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.artes li:hover{
+    border: 2px yellow solid;
+}
+
+.sob_medida{
+    text-align: center;
+    padding-bottom: 30px;
+    background: linear-gradient(white, rgb(230, 125, 230));
+}
+
+.limite_sob{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sob_medida li::before{
+    content: "★";
+}
+
+.sob_medida ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.sob_medida li{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.sob_medida img{
+    width: 60%;
+    border-radius: 50px;
+}
+
+.video_sob{
+    width: 600px;
+    margin: 30px auto 20px auto;
+}
+
+.local{
+    width: 940px;
+    margin: 0 auto 20px auto;
+}
+.mapa{
+    width: 900px;
+    height: 350px;
+}
+
+.contato{
+    background: rgb(230, 125, 230);
+}
+
+.limite_contato{
+    width: 940px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 50px;
+    border-radius: 100px;
+}
+.campo{
+    display: block;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 15px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+.check{
+    display: block;
+    margin-bottom: 15px;
+}
+
+fieldset label{
+    display: block;
+}
+
+.resp{
+    width: 30%;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: 2s all;
+}
+
+.resp:hover{
+    background: magenta;
+    color: black;
+    transform: scale(1.1);
+    border: none;
+}
+
+/****************************************************************************************************************************************************
+
+                                                                FOOTER
+
+*****************************************************************************************************************************************************/
+
+footer{
+    text-align: center;
+    background: rgb(230, 125, 230);
+    padding: 20px 0;
+}
+
+.limite_footer{
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 45px;
+    padding: 10px 0;
+
+}
+
+footer img{
+    width: 10%;
+}
+
+footer div > p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/****************************************************************************************************************************************************
+
+                                                                MOBILE
+
+*****************************************************************************************************************************************************/
+
+@media screen and (max-width:480px) {
+
+    .limitado, .limite_footer, .artes, .limite_sob, .limite_contato, .local, .limite_header{
+        width: auto;
+        position: static;
+    }
+
+    header h2, header nav{
+        position: static;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+
+    header h1 img{
+        width: 90%;
+    }
+
+    header h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    header nav li{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .video_sob{
+        width: auto;
+    }
+
+    .mapa{
+        width: auto;
+    }
+    
+    .titulo{
+        width: auto;
+        font-size: 2em;
+    }
+
+    .artes li{
+        text-align: center;
+    }
+
+    .sob_medida ul{
+        display: block;
+        width: 100%;
+    }
+
+    .sob_medida li{
+        text-align: center;
+
+    }
+
+    .artes li{
+        display: block;
+        margin-bottom: 30px;
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .artes li img{
+        width: 100%;
+    }
+
+    .artes{
+        text-align: center;
+    }
+
+}

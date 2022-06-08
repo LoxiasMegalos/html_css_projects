@@ -1,0 +1,170 @@
+h1 { font-family: "Helvetica Neue"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Helvetica Neue"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Helvetica Neue"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Helvetica Neue"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Helvetica Neue"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+.t{
+    font-weight: 550;
+}
+
+body{
+    background: #FAFAFA;
+}
+
+header{
+    border-bottom: #CCCCCC solid 1px;
+    background: white;
+}
+
+.container{
+    padding-top: 4px;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.barra nav li{
+    display: inline;
+    margin-right: 12px;
+}
+
+.barra input{
+    padding: 7px 40px 7px 10px;
+    background: #EFEFEF;
+    border: none;
+    color: #8E8E8E;
+    border-radius: 7px;
+    font-size: 1.1em;
+}
+
+.envio::placeholder{
+    font-weight: 100;
+}
+
+.envio:focus::placeholder{
+    opacity: 0;
+}
+
+.stories{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.stories_container{
+    width: 550px;
+    height: 120px;
+    background: white;
+    margin-top: 22px;
+    border: 1px solid #BBBBBB;
+    padding: 10px 0;
+}
+
+.stories_container ul{
+    display: flex;
+    text-align: center;
+}
+
+.stories_container li{
+    width: 20.5%;
+    margin-right: 2%;
+    height: 50%;
+    margin-left: 10px;
+}
+
+.stories_container ul img{
+    width: 80%;
+    padding: 3%;
+    border-radius: 100px;
+    border: 5px solid #DE366B;
+    
+}
+
+.conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.conteiner_conteudo{
+    width: 550px;
+    height: auto;
+    background: white;
+    margin-top: 22px;
+    border: 1px solid #BBBBBB;
+    padding: 10px 0;
+    margin-bottom: 22px;
+}
+
+.header_foto{
+    display: flex;
+    align-items: center;
+}
+
+.header_foto img{
+    margin-right: 5px;
+}
+
+.header_foto p{
+    font-weight: bold;
+}
+
+.img_principal{
+    width: 100%;
+}
+
+.icones_foto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comentario strong{
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.comentario{
+    border-bottom: 1px solid #BBBBBB;
+    padding: 7px 0 15px 0;
+}
+
+.footer_coment{
+    padding: 10px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c_d{
+    display: flex;
+    justify-content: center;
+}
+
+.c_box{
+    border: none;
+}
+
+.c_box:focus{
+    border: 0px white solid;
+}
+
+.c_e{
+    display: flex;
+    justify-content: center;
+}
+
+.p_box{
+    color: #B3DFFC;
+    border: none;
+    background: white;
+}
+
+.iconperfil{
+    width: 7%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}

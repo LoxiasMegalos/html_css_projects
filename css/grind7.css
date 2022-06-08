@@ -1,0 +1,204 @@
+
+body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: #1D232A;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 40px;
+    padding: 32px 8px;
+    background: #1D232A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.menu-lateral{
+    width: 200px;
+    height: 75vh;
+    background: #15191C;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal{
+    padding: 16px 60px;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 32px;
+    grid-template-areas: 
+    "ini ini ini"
+    "map map favo"
+    "video video video"
+    ;
+    align-items: left;
+}
+
+.inicio{
+    margin: 30px 30px;
+    grid-area: ini;
+}
+
+.mapa{
+    grid-area: map;
+    width: 100%;
+}
+
+.favoritos{
+    grid-area: favo;
+    height: 500px;
+    width: 256px;
+    border-radius: 15px;
+    background: #CCCCCC;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.favoritos_titulo, .ver-todos{
+    padding: 16px 16px;
+}
+
+.ver-todos{
+    justify-self: end;
+}
+
+.musica{
+    grid-column: span 2;
+    padding: 16px 16px;
+}
+
+
+
+.picos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: video;
+    gap: 16px;
+}
+
+.mais_visitados{
+    grid-column: span 4;
+}
+
+.pico_foto{
+    width: 100%;
+}
+
+
+@font-face {
+    font-family: 'icones';
+    src: url(./font/icones.ttf);
+}
+
+i, .nome_do_usuario, .caminho{
+    font-family: 'icones';
+}
+
+.notificacao{
+    background: #1D232A;
+    border: none;
+}
+
+.notificacao i::before{
+    content: "\e906";
+    font-size: 24px;
+    color: white;
+}
+
+.nome_do_usuario{
+    justify-self: end;
+    font-size: 24px;
+    color: white;
+    border-right: 1px solid white;
+    margin-right: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+}
+
+.nome_do_usuario::before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(./font/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nome_do_usuario::after{
+    content: "\e90d";
+    align-self: center;
+}
+
+
+.hzc_logo{
+    align-self: center;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+.caminho{
+    color: #BBBBBB;
+    font-size: 1.2rem;
+    height: 64px;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.caminho::before{
+    content: "\e902";
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.caminho:hover{
+    color: white;
+    border-left: 8px solid white;
+    padding-left: 56px;
+}
+
+.container_stories{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao_musica{
+    width: 64px;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.botao_musica:hover{
+    background: #CCCCCC;
+    transition: .25s;
+}
+
+.musica-ativa{
+    
+    display: none;
+}
+
+.music{
+    width: 192px;
+    height: 108px;
+    visibility: visible;
+}
+
+.cabecalho-off, .menu-lateral-off, .principal-off{
+    display: none;
+}

@@ -1,50 +1,249 @@
-.principal{
-    background: rgb(0, 255, 21);
-    padding: 20px;
+/*HEADER*/
+
+header{
+    background: rgb(212, 224, 168);    
 }
 
-#bandeira{
-    width: 100%;
+.limite{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
 }
 
-.tp{
-    padding-left: 100px;
-}
-
-.ts{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-#p1{
-    color: red;
-    font-size: 20px;
-}
-
-#ano{
-    font-size: 18px;
-    font-style: italic;
-}
-
-p strong em{
-    color: slateblue;
-}
-
-.tripulacao{
-    background: cyan;
-    padding: 20px;
-}
-
-.lista{
-    display: inline-block;
-    vertical-align: 200px;
-    width: 20%;
-    margin-right: 3%;
-}
-
-.chapeusdepalha{
+.img_principal{
     width: 50%;
+    border-radius: 50px;
+}
+
+
+header h2{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li a{
+    margin-left: 15px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+nav li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+.trip, .luffy, .zoro, .usopp, .sanji, .nami, .chopper, .robin, .franky, .brook, .jinbei{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.trip h3{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30x;
+}
+
+.trip img{
+    padding: 30px 0 0 0;
+    width: 50%;
+    border-radius: 100px;
+}
+
+.tripulantes{
+    padding: 30px 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30%;
+}
+
+.tripulantes li{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7.5px;
+}
+
+.back_luffy{
+    background: rgb(192, 60, 60);
+}
+
+.luffy img, .usopp img, .nami img, .robin img, .brook img{
+    border-radius: 150px;
+    margin-right: 40%;
+}
+
+.brook img{
+    border-radius: 150px;
+    margin-right: 30%;
+}
+
+.luffy h3, .usopp h3, .nami h3, .robin h3, .brook h3{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;
+}
+
+
+
+.back_zoro{
+    background: rgb(42, 177, 42);
+}
+
+.zoro img, .sanji img, .chopper img, .franky img, .jinbei img{
+    border-radius: 150px;
+    margin-left: 70%;
+}
+
+.zoro h3, .sanji h3, .chopper h3, .franky h3, .jinbei h3{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;  
+}
+
+.back_usopp{
+    background: brown;
+}
+
+.back_sanji{
+    background: yellow;
+}
+
+.back_nami{
+    background: orange;
+}
+
+.back_chopper{
+    background: purple;
+}
+
+.back_robin{
+    background: pink;
+}
+
+.back_franky{
+    background: gray;
+}
+
+.back_brook{
+    background: black;
+}
+
+.back_jinbei{
+    background: rgb(115, 115, 206);
+}
+
+form{
+    background: rgb(212, 224, 168);
+    border-top: 1px solid black;  
+    padding-top: 50px;  
+}
+
+.contato{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo_contato{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.formulario, .formulario_f{
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 5px 10px 5px 10px;
+    transition: all 1s;
+    border: none;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+legend{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+.formulario_f:hover{
+    transform: scale(1.2);
+    background: rgb(29, 28, 28);
+    color: white;
+}
+
+table{
+    text-align: center;
+}
+
+thead{
+    background: black;
+    color: white;
+}
+
+
+th, td{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background: rgb(212, 224, 168);  
+}
+
+.footer{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer img{
+    width: 30%;
+}
+
+.copy{
+    color: black;
+    font-size: 14px;
 }

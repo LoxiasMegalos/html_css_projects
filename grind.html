@@ -1,40 +1,158 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <title>One Piece - Fan Page</title>
+        <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/grind.css">
-        <title>One Piece!</title>
+        <link rel="shortcut icon" href="./img/grind/logo.png">
     </head>
     <body>
-        
         <header>
-            <h1 class="tp">ONE PIECE</h1>
+            <div class="limite">
+                <h1><img src="./img/grind/luffy_flag.jpg" class="img_principal" alt="bandeira da tripulação do chapéu de palha"></h1>
+                <h2>One Piece Fan Page</h2>
+                <nav>
+                    <ul>
+                        <li><a href="grind.html" target="_blank">Main</a></li>
+                        <li><a href="grind.html" target="_blank">Tripulação</a></li>
+                        <li><a href="grind.html" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <main>
+            <div class="trip">
+                <h3>Os chapéus de palha:</h3>
+                <ul class="tripulantes">
+                    <li>&starf; Luffy</li>
+                    <li>&starf; Zoro</li>
+                    <li>&starf; Usopp</li>
+                    <li>&starf; Sanji</li>
+                    <li>&starf; Nami</li>
+                    <li>&starf; Chopper</li>
+                    <li>&starf; Robin</li>
+                    <li>&starf; Franky</li>
+                    <li>&starf; Brook</li>
+                    <li>&starf; Jinbei</li>
+                </ul>
+                <img src="./img/grind/mugiwaras.jpg">
+            </div>
+            <div class="back_luffy">
+                <div class="luffy">
+                    <img src="./img/grind/luffy.png">
+                    <h3>Monkey D. Luffy</h3>
+                </div>
+            </div>
+            <div class="back_zoro">
+                <div class="zoro">
+                    <h3>Roronoa Zoro</h3>
+                    <img src="./img/grind/zoro.png"> 
+                </div>
+            </div>
+            <div class="back_usopp">
+                <div class="usopp">
+                    <img src="./img/grind/usopp.png">
+                    <h3>Usopp</h3>
+                </div>
+            </div>
+            <div class="back_sanji">
+                <div class="sanji">
+                    <h3>Vinsmoke Sanji</h3>
+                    <img src="./img/grind/sanji.png">
+                </div>
+            </div>
+            <div class="back_nami">
+                <div class="nami">
+                    <img src="./img/grind/nami.png">
+                    <h3>Nami</h3>
+                </div>
+            </div>
+            <div class="back_chopper">
+                <div class="chopper">
+                    <h3>Tony Tony Chopper</h3>
+                    <img src="./img/grind/chopper.png">   
+                </div>
+            </div>
+            <div class="back_robin">
+                <div class="robin">
+                    
+                    <img src="./img/grind/robin.png">
+                    <h3>Nico Robin</h3>
+                </div>
+            </div>
+            <div class="back_franky">
+                <div class="franky">
+                    <h3>Franky</h3>
+                    <img src="./img/grind/franky.png">
+                    
+                </div>
+            </div>
+            <div class="back_brook">
+                <div class="brook">
+                    <img src="./img/grind/brooky.png">
+                    <h3>Haranauta no Brook</h3>
+                </div>
+            </div>
+            <div class="back_jinbei">
+                <div class="jinbei">
+                    <h3>Jinbei</h3>
+                    <img src="./img/grind/jinbei.png">
+                    
+                </div>
+            </div>
+            <form>
+                <fieldset class="contato">
+                    <legend class="titulo_contato">Qual o seu Mugiwara Favorito?</legend>
 
-        <div class="principal">
-            <img id="bandeira" src="./img/luffy_flag.jpg">
-            <h2 class="ts">ONE PIECE</h2>
-            <p id="p1"><strong>One piece é um anime com mais de 1000 episódios!</strong></p>
-            <p id="ano">A transmissão desta obra se iniciou em 1999</p>
-            <p>São mais de <strong><em>20 sagas</em></strong> separadas com apenas 1 timeskyp de 2 anos</p>
-        </div>
+                    <label for="nome">Nome e Sobrenome</label>
+                    <input type="text" id="nome" required class="formulario">
 
-        <div class="tripulacao">
-            <h3 class="ts">TRIPULANTES DO CHAPÉU DE PALHA</h3>
-            <ol class="lista">
-                <li>Luffy</li>
-                <li>Zoro</li>
-                <li>Usopp</li>
-                <li>Nami</li>
-                <li>Sanji</li>
-                <li>Chopper</li>
-                <li>Robin</li>
-                <li>Franky</li>
-                <li>Brook</li>
-                <li>Jinbei</li>
-            </ol>
-            <img src="./img/mugiwaras.jpg" class="chapeusdepalha">
-        </div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required placeholder="email@dominio.com" class="formulario">
+
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" required placeholder="+XX (XX) XXXXX-XXXX" class="formulario">
+
+                    <label for="text">Mensagem</label>
+                    <textarea id="text" class="formulario"></textarea>
+
+                    <label for="sel_ps"><input id="sel_ps" name="sel" type="radio" checked>Pré-TimeSkip</label>
+                    <label for="sel_pt"><input id="sel_pt" name="sel" type="radio">Pós-TimeSkip</label>
+
+                    <legend>Qual o Yonkou mais forte?</legend>
+                    <select>
+                        <option>Shanks</option>
+                        <option>Big Mon</option>
+                        <option>Kaido</option>
+                    </select>
+
+                    <label for="deseja"><input type="checkbox" checked id="deseja">Deseja receber atualizações por e-mail?</label>
+
+                    <input type="submit" value="Conte-nos!" class="formulario_f">
+
+                    <table>
+                        <thead>
+                            <th>Arco</th>
+                            <th>Epsódios</th>
+                        </thead>
+                        <tr>
+                            <td>East Blue</td>
+                            <td>1-51</td>
+                        </tr>
+                        <tr>
+                            <td>Alabasta</td>
+                            <td>51-130</td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div class="footer">
+                <img src="./img/grind/footer.png">
+                <p class="copy">&copy; Todos os direitos reservados para o bando do Chapéu de Palha</p>
+            </div>
+        </footer>
     </body>
 </html>

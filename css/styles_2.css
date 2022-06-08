@@ -28,6 +28,11 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
 .produtos{
     width: 940px;
     margin: 0 auto 0 auto;
@@ -46,6 +51,18 @@ nav a{
     border-radius: 10px 10px 10px 10px;
 }
 
+.produtos li:hover{
+    border: 2px yellow dashed;
+}
+
+.produtos li:active{
+    border: 2px red solid;
+}
+
+.produtos li:hover h2{
+    color: blueviolet;
+}
+
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
@@ -59,4 +76,43 @@ nav a{
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0 0;
+}
+
+footer{
+    text-align: center;
+    background: url("./img_css_bg/bg.jpg");
+    padding: 40px 0 40px 0;
+}
+
+.copyright{
+    font-size: 13px;
+    color: wheat;
+    margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .produtos{
+        width: auto;
+    }
+    .caixa h1{
+        text-align: center;
+        display: block;
+    }
+
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+    nav li {
+        display: inline-block;
+        margin-left: 10px;
+        text-decoration: underline;
+    }
+    .produtos li{
+        display: block;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
 }

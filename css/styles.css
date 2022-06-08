@@ -1,51 +1,109 @@
+footer{
+    background: url("./img_css_bg/bg.jpg");
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+.copy{
+    font-size: 13px;
+    color: aliceblue;
+}
+
+header{
+    background: #BBBBBB;
+}
+
+.quadro{
+    width: 940px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav a:hover{
+    color: rgb(123, 255, 0);
+    text-decoration: underline;
+}
+
+.img_principal{
+    width: 1000px;
+    margin: 0 auto 20px auto;
+}
 
 #banner{
     width: 100%;
-    /*height, width, border, padding, margin*/
 }
 
-.principal {
+.tras{
     background: #CCCCCC;
-    padding: 30px;
+    padding: 30px 0;
 }
 
-.titulo_principal{
-    padding-left: 20px;
-}
-
-.titulos_centralizados{
+.texto_principal{
+    width: 1000px;
     text-align: center;
+    margin: 0 auto;
 }
 
-
-p{
-    text-align: center;
+.sobre{
+    font-weight: bolder;
+    font-size: 30px;
+    color: blue;
 }
 
-#missao{
+.blabla{
+    font-size: 18px;
+}
+
+.missao{
     font-size: 20px;
-}
-
-em strong{
-    color: red;
-}
-
-.itens {
+    font-weight: bold;
     font-style: italic;
 }
 
+.apresentacao{
+    font-size: 18px;
+    color: red;
+}
+
 .beneficios{
-    background: white;
-    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+    
 }
 
-.ben{
-    width: 50%;
-}
-
-ul {
+.lista_ben{
     display: inline-block;
-    vertical-align: 330px;
-    width: 20%;
-    margin-right: 15%;
+    vertical-align: top;
+    margin: 0 100px 0 0;
+}
+
+.lista_ben li{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+#img_ben{
+    width: 50%;
 }

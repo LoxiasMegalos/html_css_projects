@@ -1,0 +1,210 @@
+/*HEADER***********************************************************************************************/
+
+header{
+    background: #ecced3;
+    border-bottom: 1px black solid;
+    padding: 30px 0 30px 0;
+}
+
+.lim{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+header h1 img{
+    border-radius: 150px;
+    border: 2px black solid;
+}
+
+header h2{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+nav{
+    position: absolute;
+    top: 125px;
+    right: 60px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+/*MAIN***********************************************************************************************/
+.fundo-top{
+    background: #FAE8E0;  
+}
+
+.top{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.til{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.top ul{
+    vertical-align: top;
+}
+
+.top li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 50px;
+}
+
+.top li h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.top li img{
+    border-radius: 150px;
+}
+
+.top li p{
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+/*mid*/
+
+.fundo_mid{
+    background: #FAE8E0;
+}
+
+.mid{
+    width: 1200px;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 40px 0;
+}
+
+.t_mid{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mid li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 50px;
+}
+
+.mid li h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.mid li img{
+    border-radius: 150px;
+}
+
+.mid li p{
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+/**/
+
+.formulario{
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    background: #ecced3;  
+}
+
+form{
+    padding: 30px 0;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+form h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+form label{
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.campo_f{
+    padding: 10px 5px;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+form select option{
+    display: inline;
+}
+
+.tipo_c{
+    margin-bottom: 15px;
+}
+
+/*FOOTER***********************************************************************************************/
+footer{
+    padding: 20px 0;
+    background: url("./img_css_bg/mes.jpg");
+    text-align: center;
+}
+
+footer img{
+    width: 10%;
+}
+
+.res{
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}

@@ -1,0 +1,42 @@
+
+
+div{
+    height: 50px;
+    width: 50px;
+    flex: 0 1;
+    flex-basis: 25%;
+    
+}
+div:nth-child(1){
+    background: blue;
+}
+div:nth-child(2){
+    background-color: red;
+}
+div:nth-child(3){
+    background-color: yellow;
+}
+div:nth-child(4){
+    background-color: darkgreen;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div:last-child{
+        order: -1;
+    }
+}

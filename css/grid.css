@@ -1,0 +1,78 @@
+body{
+    background: rgb(46, 42, 42);
+}
+
+main{
+    display: grid;
+    gap: 10px;
+}
+
+div{
+    border-radius: 20px;
+
+}
+
+.tamanho{
+    min-width: 20vw;
+    min-height: 20vh;
+}
+
+.vermelho{
+    background: red;
+    grid-column: span 4;
+}
+
+@media screen and (min-width: 1024px) {
+    .vermelho{
+        grid-row: 4;
+    }
+}
+
+.verde{
+    background-color: green;
+    grid-row: span 3;
+}
+
+@media screen and (min-width: 1024px) {
+    .verde{
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 3;
+    }
+   
+}
+
+.azul{
+    background-color: rgb(92, 92, 197);
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+@media screen and (min-width: 1024px){
+    .azul{
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 3;
+    }
+}
+
+.roxo{
+    background: purple;
+}
+
+
+.rosa{
+    background: pink;
+    grid-row: span 2;
+}
+
+@media screen and (min-width: 1024px) {
+    .rosa{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

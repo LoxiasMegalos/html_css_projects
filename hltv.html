@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/hltv.css">
+        <link rel="shortcut icon" href="./img/furia.png">
+        <title>HLTV.org</title>
+    </head>
+    <body>
+        <header>
+            <div class="limite_principal">
+                <h1><img src="./img/hltv.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.hltv.org/" target="_blank">News</a></li>
+                        <li><a href="https://www.hltv.org/matches" target="_blank">Matches</a></li>
+                        <li><a href="https://www.hltv.org/results" target="_blank">Results</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <ul>
+                <li>
+                    <h2>Furia</h2>
+                    <a href="https://www.hltv.org/team/8297/furia" target="_blank"><img src="./img/furia.png"></a>
+                    <p class="main_texto">Campeã do Antwerp Major 2022</p>
+                </li>
+                <li>
+                    <h2>Faze</h2>
+                    <a href="https://www.hltv.org/team/6667/faze" target="_blank"><img src="./img/faze.png"></a>
+                    <p class="main_texto">2º Lugar no Antwerp Major 2022</p>
+                </li>
+                <li>
+                    <h2>Heroic</h2>
+                    <a href="https://www.hltv.org/team/7175/heroic" target="_blank"><img src="./img/heroic.png"></a>
+                    <p class="main_texto">3º Lugar no Antwerp Major 2022</p>
+                </li>
+            </ul>
+            <form>
+                <fieldset class="formulario">
+                    <legend class="legenda_p">Participe do nosso fórum:</legend>
+                    <label for="id">Nome e Sobrenome</label>
+                    <input id="id" type="text" class="input_p" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" class="input_p" placeholder="email@dominio.com" required>
+
+                    <label for="tel">Telefone</label>
+                    <input id="tel" type="tel" class="input_p" placeholder="+XX (XX) XXXXX-XXXX" required>
+
+                    <label>Mensagem</label>
+                    <textarea value="texto" type="text" class="input_p"></textarea>
+
+                    <fieldset>
+                        <legend class="legenda_s">Por onde a mensagem será enviada?</legend>
+                        <label for="r_e"><input type="radio" id="r_e" value="r_e" name="radio_s" checked>E-mail</label>
+                        <label for="r_w"><input type="radio" id="r_w" value="r_w" name="radio_s">WhatsApp</label>
+                        <label for="r_t"><input type="radio" id="r_t" value="r_t" name="radio_s">Telefone</label>      
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="legenda_s">Qual seu país de origem?</legend>
+                        <select value="sel">
+                            <option>Brasil</option>
+                            <option>EUA</option>
+                            <option>Inglaterra</option>
+                        </select>
+                    </fieldset>
+
+                    <label><input type="checkbox" value="check" checked>Deseja receber uma confirmação do envio por e-mail?</label>
+
+                    <input type="submit" value="Enviar Mensagem" class="botao">
+
+                    <table>
+                        <thead>
+                            <th>Time</th>
+                            <th>Posição</th>
+                        </thead>
+                        <tr>
+                            <td>Cloud 9</td>
+                            <td>4º lugar</td>
+                        </tr>
+                        <tr>
+                            <td>G2</td>
+                            <td>5º Lugar</td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <img src="./img/hltv_f.png">
+            <p class="text_foot">&reg; Não copiem esse site</p>
+        </footer>
+    </body>
+</html>

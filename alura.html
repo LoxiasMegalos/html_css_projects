@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale: 1.0">
+    <meta http-equiv="refresh" content="120;url=alura.html">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/alura.css">
+    <link rel="shortcut icon" href="./img/alura/logo_title.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CSS: Grids e tabelas com responsividade na web | Alura</title>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <h1><img src="./img/alura/logo2.jpg" alt="Logo Alura"></h1>
+            <input placeholder="O que você quer aprender?                               &#128269;" type="text">
+            <nav>
+                <ul>
+                    <li class="inutil">Nossas Formações</li>
+                    <li class="inutil">Para Empresas</li>
+                    <li class="inutil">Dev em < T ></li>
+                    <li>Entrar</li>
+                </ul>
+            </nav>
+            <button class="teste">Matricule-se</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="chamada">
+            <div class="container_chamada">
+                <nav class="chamada_nav">
+                    <ul>
+                        <li><a href="#">Programação</a></li>
+                        <li><a href="#">Front-end</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Devops</a></li>
+                        <li><a href="#">UX & Design</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Inovação & Gestão</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="apresentacao container">
+            <p class="apresentacao_localizacao">artigos > <strong>front-end</strong></p>
+            <h2 class="apresentacao_titulo">CSS: Grids e tabelas com responsividade na Web</h2>
+            <div class="container_img">
+                <img alt="celulares" src="./img/alura/celulares (1).png" class="apresentacao_img">
+            </div>
+
+            <div class="apresentcao_informacoes">
+                <div class="apresentacao_informacoes-autor">
+
+                    <div class="apresentacao_informacoes-autor-img">
+                        <img src="./img/alura/autor.png" class="foto_autor">
+                        <div class="apresentacao_informacoes-autor-data">
+                            <p class="nome">Murillo Alcantara</p>
+                            <p class="data">20/05/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="informacoes_compartilhe">
+                        <h3 class="compartilhe_titulo">Compartilhe</h3>
+                        <ul class="lista_compartilhamento">
+                            <li><a href="#"><img src="./img/alura/ico_twitter.JPG"></a></li>
+                            <li><a href="#"><img src="./img/alura/ico_link.JPG"></a></li>
+                            <li><a href="#"><img src="./img/alura/ico_face.JPG"></a></li>
+                            <li><a href="#"><img src="./img/alura/ico_whats.JPG"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="formacao">
+                    <img class="formacao_img" src="./img/alura/formacao.JPG">
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="conteudo_principal" id="conteudo_principali">
+            <div class="conteudo_texto">
+                <p class="texto">
+                    <strong>Grids</strong> consistem em dividir uma proporção da tela do usuário em partes iguais com espaçamento entre elas. Parecido com o antigo sistema de <strong>table</strong> que tivemos, mas de uma maneira responsiva, para que o site dê uma experiência do usuário excelente.
+                </p>
+                <p class="texto">
+                    Os smartphones já são praticamente parte de mão de todo mundo que possui um, o tempo todo acessamos apps de todo tipo (até lembrar de tomar água) e em alguns momentos até esquecemos que por trás de vários desses existe uma versão web que funciona tão bem quanto.
+                </p>
+                <div class="container_img_1">
+                    <img src="./img/alura/sites-responsivos.png" alt="sites responsivos" class="imag_texto">
+                </div>
+                <p class="texto">
+                    Com o nível de experiência de uso dos aplicativos, a web foi forçada a ter um padrão de qualidade mais alto e uma das bases para essa experiência é um site ser realmente responsivo e é justamente o que vamos ver com mais detalhes no post de hoje e de quebra entender o conceito do grid que muito se fala.
+                </p>
+                <h3 class="titulo_texto">O que é o tal do Grid?</h3>
+                <p class="texto">A ideia de ter um grid consiste basicamente em dividir uma proporção da tela do usuário em partes iguais, com espaçamento entre elas. Isso já existia desde os primordios, quando trabalhavamos com as colunas e células na época que os sites eram feitos em tabelas.</p>
+                <div class="container_gif">
+                    <img src="./img/alura/tibia-com-scroll.gif" class="gif_texto">
+                </div>
+                <p class="texto">
+                    Com os diferentes tipos de telas existentes, o código do CSS precisaria ter muitas adaptações para fazer tudo funcionar caso não existisse um grid para servir de linguagem comum no que diz respeito a largura das coisas entre os designers e os front-enders, pois o layout de um projeto poderia vir com cada elemento tendo um valor que seria alterado nas mais diversas resoluções, a ideia é trabalhar menos com valores fixos e mais com valores relativos no css.
+                </p>
+                <h3 class="titulo_texto">Você também vai querer saber mais:</h3>
+                <div class="container_videomp4">
+                    <video class="video_texto" src="./img/alura/grid.mp4" controls></video>
+                </div>
+                <h3 class="titulo_texto">Que tal um iframe?</h3>
+                <div class="container_iframe">
+                    <iframe class="texto_iframe" width="560" height="315" src="https://www.youtube.com/embed/Y9rHsdCxU8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="conteudo_autor">
+                <div class="divisao_texto-autor">
+                    <img src="./img/alura/logo-testee.png" alt="foto do bonitao" class="texto_foto-autor">
+                </div>
+                <div class="nome_e_apresentacao-autor">
+                    <h4 class="nome_autor">Murillo Alcantara</h4>
+                    <p class="apresentacao_autor">
+                        Vivo no 220v, sempre atrás de um filme/rolê novo e codando desafios aleatórios em JavaScript. Adoro fazer sites e falar/dar aulas sobre isso no @nubank, meu canal no YouTube DevSoutinho e na @alura
+                    </p>
+                </div>
+            </div>
+            
+            <div class="leia_tambem">
+                <h3 class="leia_tambem-titulo">Leia também:</h3>
+                <ul class="leia_tambem_lista">
+                    <li class="leia_tambem_lista-li"><a href="#">CSS: animações com Transition e Animation</a></li>
+                    <li class="leia_tambem_lista-li"><a href="#">Criando componentes CSS com o padrão BEM</a></li>
+                    <li class="leia_tambem_lista-li"><a href="#">Criando Layouts com CSS Grid Layout</a></li>
+                    <li class="leia_tambem_lista-li"><a href="#">Nomes de classes no CSS</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="outros ">
+            <div class="container_outros container">
+                <p class="outros-texto"> Veja outros artigos sobre <a href="#">Front-end</a></p>
+            </div>
+        </section>
+
+        <section class="mergulho container" id="mergulhoi">
+            <div class="mergulho_container">
+                <h3 class="mergulho_titulo">Quer mergulhar em tecnologia e aprendizagem?</h3>
+                <p class="mergulho_p">
+                    Receba a newsletter que o nosso CEO escreve pessoalmente, com insights do mercado de trabalho, ciência e desenvolvimento de software
+                </p>
+                <input type="email" class="mergulho_email" placeholder="Escreva seu email"><button class="mergulho_botao">ME INSCREVA</button>
+            </div>
+        </section>
+        
+        <section class="informacoes_site">
+            
+            <div class="informacoes_site_container container">
+                <div class="informacoes_site-fiscal">
+                    <img src="./img/alura/logo_alura_nov.JPG" alt="nome alura" class="nome_alura">
+                    <p class="razao_social">AOVS Sistemas de Informática S.A</p>
+                    <p class="cnpj">CNPJ 05.555.382/0001-33</p>
+                    <h3 class="redes_e_apps">NOSSAS REDES E APPS</h3>
+                    <div class="redes_e_apps_container">
+                        <a href="#"><img src="./img/alura/yt.JPG" alt="yt"></a>
+                        <a href="#"><img src="./img/alura/fc.JPG" alt="face"></a>
+                        <a href="#"><img src="./img/alura/tw.JPG" alt="twitter"></a>
+                        <a href="#"><img src="./img/alura/it.JPG" alt="insta"></a>
+                        <a href="#"><img src="./img/alura/gp.JPG" alt="google"></a>
+                        <a href="#"><img src="./img/alura/as.JPG" alt="apple"></a>
+                    </div>
+                </div>
+    
+                <div class="informacoes_site-nav">
+                    <div class="info-nav">
+                        <h3 class="titulo_info-nav">NAVEGAÇÃO</h3>
+                        <ul>
+                            <li><a href="#">planos</a></li>
+                            <li><a href="#">todos os cursos</a></li>
+                            <li><a href="#">alura cases</a></li>
+                            <li><a href="#">guia de carreira</a></li>
+                            <li><a href="#">Instrutores</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Como virar instrutor</a></li>
+                            <li><a href="#">artigos</a></li>
+                            <li><a href="#">para escolas</a></li>
+                            <li><a href="#">podcasts</a></li>
+                            <li><a href="#">política de privacidade</a></li>
+                            <li><a href="#">termos de uso</a></li>
+                            <li><a href="#">sobre nós</a></li>
+                            <li><a href="#">como funciona</a></li>
+                            <li><a href="#">dev em <strong>T</strong></a></li>
+                            <li><a href="#">perguntas frequentes</a></li>
+                            <li><a href="#">status</a></li>
+                            <li><a href="#">mapa do site</a></li>
+                        </ul>
+                    </div>
+                    <div class="fale-nav">
+                        <h3 class="titulo_fale-nav">FALE COM A GENTE</h3>
+                        <ul>
+                            <li><a href="#">whatsapp</a></li>
+                            <li><a href="#">email e telefone</a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-nav">
+                        <h3 class="titulo_blog-nav">BLOG</h3>
+                        <ul>
+                            <li><a href="#">programação</a></li>
+                            <li><a href="#">front-end</a></li>
+                            <li><a href="#">data-science</a></li>
+                            <li><a href="#">devops</a></li>
+                            <li><a href="#">ux & design</a></li>
+                            <li><a href="#">mobile</a></li>
+                            <li><a href="#">inovação e gestão</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="informacoes_site-novidades">
+    
+                    <div class="container_nov-e-lanc">
+                        <h3 class="titulo-nov_e_lanc">Novidades e Lançamentos</h3>
+                        <input type="text" class="lanc_email" placeholder="Seu e-mail"><button class="lanc_b">Receber</button>
+                    </div>
+    
+                    <div class="container_emp">
+                        <h3 class="titulo_nov-emp">ALURA NA SUA EMPRESA</h3>
+                        <p class="dev-emp">Desenvolva seu time com apoio da nossa solução</p>
+                        <ul class="lista_emp">
+                            <li><a href="#">cases</a></li>
+                            <li><a href="#">comunidade</a></li>
+                            <li><a href="#">guia de carreira</a></li>
+                            <li><a href="#">na mídia</a></li>
+                            <li><a href="#">conheça mais</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="container_com">
+                        <h3 class="titulo_nov-com">comunidade</h3>
+                        <ul class="lista_com">
+                            <li><a href="#">scuba dev</a></li>
+                            <li><a href="#">imersões</a></li>
+                            <li><a href="#">depoimentos</a></li>
+                            <li><a href="#">nossos instrutores</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="container_parceiros">
+                        <h3 class="titulo_parceiros">PARCEIROS</h3>
+                        <img src="./img/alura/scale.JPG" alt="imagem scale" class="scale">
+                        <p class="scale_texto">Nós, da Alura, somos uma das Scale-Ups selecionadas pela Endeavor, programa de aceleração das empresas que mais crescem no país.</p>
+                        <img src="./img/alura/google.JPG" alt="imagem google" class="google">
+                        <p class="google_texto">Fomos uma das 7 startups selecionadas pelo Google For Startups a participar do programa Growth Academy em 2021.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="todos_os_cursos">
+            <div class="container_cursos container">
+                <h3 class="titulo_cursos">Cursos</h3>
+                <div class="container_todos_os_cursos">
+                    <div class="tipos_de_cursos">
+                        <ul class="lista_tipo_de_cursos">
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de Programação</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de Front-end</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de Data Science</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de DevOps</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de UX & Design</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de Mobile</a></li>
+                            <li class="li_tipo_de_curso"><a href="#">Cursos de Inovação & Gestão</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="cursos_de_tipos">
+                        <ul class="lista_p">
+                            <li><a href="#" class="c_b">Lógica</a></li>
+                            <li><a href="#" class="c_b">Python</a></li>
+                            <li><a href="#" class="c_b">PHP</a></li>
+                            <li><a href="#" class="c_b">Java</a></li>
+                            <li><a href="#" class="c_b">.NET</a></li>
+                            <li><a href="#" class="c_b">Node JS</a></li>
+                            <li><a href="#" class="c_b">C</a></li>
+                            <li><a href="#" class="c_b">Computação</a></li>
+                            <li><a href="#" class="c_b">Jogos</a></li>
+                            <li><a href="#">IoT</a></li>
+                        </ul>
+
+                        <ul class="lista_fe">
+                            <li><a href="#" class="c_b">HTML, CSS</a></li>
+                            <li><a href="#" class="c_b">React</a></li>
+                            <li><a href="#" class="c_b">Angular</a></li>
+                            <li><a href="#" class="c_b">JavaScript</a></li>
+                            <li><a href="#">jQuery</a></li>
+                        </ul>
+
+                        <ul class="lita_ds">
+                            <li><a href="#" class="c_b">Ciências de Dados</a></li>
+                            <li><a href="#" class="c_b">BI</a></li>
+                            <li><a href="#" class="c_b">SQL e Banco de Dados</a></li>
+                            <li><a href="#" class="c_b">Excel</a></li>
+                            <li><a href="#" class="c_b">Machine Learning</a></li>
+                            <li><a href="#" class="c_b">NoSQL</a></li>
+                            <li><a href="#">Estatística</a></li>
+                        </ul>
+
+                        <ul class="lista_do">
+                            <li><a href="#" class="c_b">AWS</a></li>
+                            <li><a href="#" class="c_b">Azure</a></li>
+                            <li><a href="#" class="c_b">Docker</a></li>
+                            <li><a href="#" class="c_b">Segurança</a></li>
+                            <li><a href="#" class="c_b">IaC</a></li>
+                            <li><a href="#">Linux</a></li>
+                        </ul>
+
+                        <ul class="lista_ux">
+                            <li><a href="#" class="c_b">Photoshop e Illustrator</a></li>
+                            <li><a href="#" class="c_b">Usabilidade e UX</a></li>
+                            <li><a href="#" class="c_b">Vídeo e Motion</a></li>
+                            <li><a href="#">3D</a></li>
+                        </ul>
+
+                        <ul class="lista_mb">
+                            <li><a href="#" class="c_b">React Native</a></li>
+                            <li><a href="#" class="c_b">Flutter</a></li>
+                            <li><a href="#" class="c_b">iOS e Swift</a></li>
+                            <li><a href="#" class="c_b">Android, Kotlin</a></li>
+                            <li><a href="#">Jogos</a></li>
+                        </ul>
+
+                        <ul class="lista_ig">
+                            <li><a href="#" class="c_b">Métodos Ágeis</a></li>
+                            <li><a href="#" class="c_b">Softskills</a></li>
+                            <li><a href="#" class="c_b">Liderança e Gestão</a></li>
+                            <li><a href="#" class="c_b">Startups</a></li>
+                            <li><a href="#">Vendas</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="grupo_alura">
+            <div class="grupo_container container">
+                <h3 class="titulo_grupo_alura">Grupo Alura</h3>
+                <div class="educacao_online_comunidade">
+                    
+                    <div class="educacao">
+                        <h3 class="titulo_educacao">Educação</h3>
+                        <ul class="educacao_lista">
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Caelum</p></a></li>
+                            <li><a href="#"><img src="./img/alura/casa_do_codigo.JPG"><p>Casa do Código</p></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="educacao_oline">
+                        <h3 class="tituloe_educacao_online">Educação Online</h3>
+                        <ul class="online_lista">
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Alura</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Alura Para Empresas</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Alura LATAM</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Alura Start</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>MusicDot</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Alura Lingua</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>PM3 - Cursos de Produto</p></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="comunidade">
+                        <h3 class="titulo_comunidade">Comunidade</h3>
+                        <ul class="comunidade_lista">
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Hipsters ponto Tech</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Scuba Dev</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Layers ponto Tech</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Like a Boss</p></a></li>
+                            <li><a href="#"><img src="./img/alura/caelum.JPG"><p>Carreira sem Fronteiras</p></a></li>
+                            <li><a href="#conteudo_principali"><img src="./img/alura/caelum.JPG"><p>Hipsters ponto Jobs</p></a></li>
+                            <li><a href="#mergulhoi"><img src="./img/alura/caelum.JPG"><p>GUJ</p></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>

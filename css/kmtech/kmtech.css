@@ -1,0 +1,154 @@
+:root{
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+body{
+    font-family: 'Tiro Devanagari Hindi', serif;
+    background: var(--branco);
+    padding: 0 3% 0 3%;
+}
+
+.navegacao{
+    background: var(--preto);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 20px 20px;
+}
+
+.limite_logo{
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.empresa_logo{
+    width: 100%;
+}
+
+.empresa_nome{
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 2.8rem;
+}
+
+.navegacao_header{
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navegacao_header li{
+    display: inline;
+}
+
+.navegacao_header a{
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 3px;
+    border-radius: 20px;
+    background: var(--branco);
+}
+
+.conteudo_container{
+    margin-top: 1rem;
+}
+
+.titulo_produto{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.conteudo_apresentacao{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+}
+
+.container_youtube{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.apresentacao_negocio{
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+    body{
+        background: var(--branco);
+        padding: 0 2%;
+    }
+    
+    .navegacao{
+        border-radius: 0 0 20px 20px;
+    }
+
+    .limite_logo{
+        width: auto;
+        margin-bottom: 1rem;
+    }
+
+    .navegacao_header a{
+        padding: 10px 10px;
+        border-radius: 30px;
+    }
+
+    .apresentacao_negocio{
+        width: 80%;
+        height: 385px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        background: var(--branco);
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+
+    .navegacao{
+        margin-top: 2rem;
+        border-radius: 20px 20px 20px 20px;
+        flex-direction: row;
+        box-shadow: 0 0 1rem var(--preto);
+    }
+
+    .limite_logo{
+        width: auto;
+        margin-bottom: 1rem;
+    }
+
+    .navegacao_header{
+        padding-top: 2.8rem;
+        width: 70%;
+    }
+
+    .navegacao_header a{
+        padding: 10px 10px;
+        border-radius: 30px;
+    }
+
+    .apresentacao_negocio{
+        width: 70%;
+        height: 420px;
+        border: 6px solid #504d4d;
+        border-radius: 10px;
+    }
+}

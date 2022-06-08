@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato - Barbearia do Murillo</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles_3.css">
+        <link rel="shortcut icon" href="./img/logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="limite">
+                <h1><img src="./img/logo.png" alt="Logo da Barbearia do Murillo"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" target="_blank">Main</a></li>
+                        <li><a href="curso_2.html" target="_blank">Produtos</a></li>
+                        <li><a href="curso_3.html" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Curso 3 - HTML e CSS - Formulários e Tabelas</h2>
+            <form>
+                <label for="nome_e_sobrenome">Nome e sobrenome</label>
+                <input type="text" id="nome_e_sobrenome" class="input_padrao" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input_padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" class="input_padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="men">Mensagem</label>
+                <textarea cols="68" rows="10" id="men" class="input_padrao" required></textarea>
+
+                <fieldset class="forma">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-e-mail"><input type="radio" name="contato" value="e-mail" id="radio-e-mail"" required>E-mail</label>
+                    <label for="radio-whats"><input type="radio" name="contato" value="whatsapp" id="radio-whats"" required checked>WhatsApp</label>
+                    <label for="radio-tel"><input type="radio" name="contato" value="telefone" id="radio-tel"" required>Telefone</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select required>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="./img/logo-branco.png" alt="Logo da Barbearia do Murillo">
+            <p class="copy">&copy; Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>

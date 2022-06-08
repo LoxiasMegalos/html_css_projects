@@ -1,0 +1,141 @@
+/*Main*/
+
+main{
+    background: #FAFAFA;
+}
+
+.container_conteudo{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    justify-content: center;
+}
+
+.login{
+    height: 340px;
+    width: 350px;
+    background: white;
+    border: #DBDBDB 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.login img{
+    width: 100%;
+}
+
+.verifica{
+    background: #0095F6;
+    padding: 8px 20px;
+
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.verifica a{
+    text-decoration: none;
+    color: white;
+}
+
+.trocar strong{
+    color: #0095F6;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    color: #8E8E8E;
+    background: #FAFAFA;
+    padding: 10px 0 100px 0;
+    font-size: 14px;
+}
+
+footer .container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.rodape_cima{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7.5px;
+}
+
+.rodape_meio{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 22px;
+}
+
+.rodape_baixo ul{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape_cima li, .rodape_meio li{
+    display: inline;
+
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 875px) {
+
+    .container_conteudo{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+
+    .img_p{
+        width: 0;
+    }
+
+    footer .container{
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .rodape_cima, .rodape_meio{
+        flex-wrap: wrap;
+    }
+
+    .rodape_cima li{
+        margin-right: 20px;
+        margin-bottom: 7px;
+    }
+
+    .rodape_meio{
+        width: 90%;
+    }
+
+    .rodape_meio li{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .rodape_baixo ul{
+        width: 100%;
+    }
+
+    .login{
+        background: #FAFAFA;
+        border: none;
+        width: auto;
+    }
+
+}

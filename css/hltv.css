@@ -1,0 +1,170 @@
+header{
+    background: #3E6EA0;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px black solid;
+}
+
+.limite_principal{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+nav ul{
+    position: absolute;
+    top: 37px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    margin-left: 40px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+main ul{
+    width: 1000px;
+    margin: 50px auto 50px auto;
+}
+
+main li{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+    margin: 0 1.5%;
+    padding: 40px 30px 40px 30px;
+    box-sizing: border-box;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+main li:hover {
+    border: 2px rgb(226, 241, 5) solid;
+}
+
+main li:hover h2{
+    color: rgb(226, 241, 5);
+}
+
+main li:hover p{
+    color: rgb(226, 241, 5);
+}
+
+main li:active{
+    border: 2px rgb(226, 241, 5) dashed;
+}
+
+main h2{
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.main_texto{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form{
+    background: #E5E7EA;
+    border-top: 1px black solid;
+    padding: 40px 0;
+}
+
+.formulario{
+    width: 1000px;
+    margin: 0 auto;  
+}
+
+.legenda_p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.legenda_s{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input_p{
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px 5px 10px 5px;
+}
+
+form select{
+    margin-bottom: 15px;
+}
+
+.botao{
+    padding: 10px 10px;
+    font-size: 20px;
+    background: rgb(110, 110, 126);
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    color: white;
+}
+
+.botao:hover{
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+table{
+    margin-top: 15px;
+    text-align: center;
+}
+
+th{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+td{
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    background: url("./img_css_bg/bg_hltv.png");
+    padding: 30px 0 70px 0;
+    border-top: 1px black solid;
+}
+
+footer img{
+    margin-top: 30px;    
+}
+
+.text_foot{
+    color: white;
+    font-size: 13px;
+    margin: 30px 0 0 0;
+}
